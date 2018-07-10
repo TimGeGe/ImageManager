@@ -1,0 +1,30 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="ImageManager.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="OriginalBucketName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">pluralsight-original</Value>
+    </Setting>
+    <Setting Name="OriginalBucketUrl" Type="System.String" Scope="User">
+      <Value Profile="(Default)">https://s3-ap-southeast-2.amazonaws.com/pluralsight-original/</Value>
+    </Setting>
+    <Setting Name="ResizedBucketName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">pluralsight-resized</Value>
+    </Setting>
+    <Setting Name="ResizedBucketUrl" Type="System.String" Scope="User">
+      <Value Profile="(Default)">https://s3-ap-southeast-2.amazonaws.com/pluralsight-resized/</Value>
+    </Setting>
+    <Setting Name="VaultName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">pluralsight-original</Value>
+    </Setting>
+    <Setting Name="AWSRegion" Type="System.String" Scope="User">
+      <Value Profile="(Default)">ap-southeast-2</Value>
+    </Setting>
+    <Setting Name="AWSAccessKey" Type="System.String" Scope="User">
+      <Value Profile="(Default)">AKIAIANO4HFUOBGNGU7Q</Value>
+    </Setting>
+    <Setting Name="AWSSecretKey" Type="System.String" Scope="User">
+      <Value Profile="(Default)">X0WIMQkfsoISeZrw5I3LtCLw0GGy8fcl8wR3qxnO</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
