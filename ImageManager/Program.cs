@@ -1,6 +1,8 @@
-﻿using ImageManager.Services;
+﻿using ImageManager.Model;
+using ImageManager.Services;
 using System;
 using System.Collections.Generic;
+using System.IO.Abstractions;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,7 +14,7 @@ namespace ImageManager
         static void Main(string[] args)
         {
             var service = new PersistentService();
-            var manager = new ImageManager(service);
+            var manager = new ImageManager(service, new FileSystem());
         }
     }
 }

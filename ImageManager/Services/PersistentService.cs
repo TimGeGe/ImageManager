@@ -75,7 +75,7 @@ namespace ImageManager.Services
         }
 
 
-        public async Task<ImageUploadedModel> UploadImageAsync(string bucketName, string objectKey, ImageInfo imageInfo)
+        public async Task<ImageUploadedModel> UploadImageAsync(string bucketName, string objectKey, string filePath)
         {
             using (var transferUtility = new TransferUtility(_s3Client, _config))
             {
@@ -87,8 +87,7 @@ namespace ImageManager.Services
                     BucketName = _settings.OriginalBucketName,
                     StorageClass = S3StorageClass.Standard,
                     CannedACL = S3CannedACL.Private,
-                    FilePath = imageInfo.FilePath,
-                    ContentType = imageInfo.MimeType,
+                    FilePath = filePath,
                 };
                 await transferUtility.UploadAsync(request);
 

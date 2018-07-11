@@ -13,6 +13,6 @@ namespace ImageManager.Services
     {
         Task<bool> ImageExistsAsync(string bucketName, string objectKey);
         Task GetImageAsync(string bucketName, string objectKey, string filePath);
-        Task<ImageUploadedModel> UploadImageAsync(string bucketName, string objectKey, ImageInfo image);
+        Task<ImageUploadedModel> UploadImageAsync(string bucketName, string objectKey, string filePath);
     }
 }
